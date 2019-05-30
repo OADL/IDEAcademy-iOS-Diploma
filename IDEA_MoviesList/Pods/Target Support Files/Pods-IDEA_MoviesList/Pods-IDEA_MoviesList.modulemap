@@ -1,0 +1,6 @@
+framework module Pods_IDEA_MoviesList {
+  umbrella header "Pods-IDEA_MoviesList-umbrella.h"
+
+  export *
+  module * { export * }
+}

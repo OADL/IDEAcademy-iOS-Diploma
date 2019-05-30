@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.8.2)
+  - PMSuperButton (3.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - PMSuperButton
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - PMSuperButton
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  PMSuperButton: 2bef6f8659a5df969a69887f496ef309480c65eb
+
+PODFILE CHECKSUM: 3e66f3901c78efe67e93b0033c0e7661e3d53703
+
+COCOAPODS: 1.5.2

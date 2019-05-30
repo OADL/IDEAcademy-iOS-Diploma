@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="juq-G3-ewK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Apps-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IDEA_AppsList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WDE-2A-69C">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="appcell" rowHeight="137" id="2uH-Ii-XBn" customClass="AppTableViewCell" customModule="IDEA_AppsList" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="137"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2uH-Ii-XBn" id="Rh7-y1-Hxl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="136.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVq-7N-rYn">
+                                                    <rect key="frame" x="15" y="23" width="9" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="vOp-oa-jng">
+                                                    <rect key="frame" x="36" y="7.5" width="55" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="55" id="cQp-ol-rE3"/>
+                                                        <constraint firstAttribute="width" constant="55" id="ipQ-if-6Fe"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minecraft: Story Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbG-lo-XbW">
+                                                    <rect key="frame" x="99" y="12" width="136" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tY-xJ-dyp">
+                                                    <rect key="frame" x="99" y="27.5" width="40" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In-App Purchases" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQh-mG-XFs">
+                                                    <rect key="frame" x="310" y="48.5" width="50" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRk-Z3-G5b" customClass="CustomUIButton" customModule="IDEA_AppsList" customModuleProvider="target">
+                                                    <rect key="frame" x="310" y="23.5" width="50" height="23"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="rED-3m-9P8"/>
+                                                        <constraint firstAttribute="height" constant="23" id="wML-RN-oam"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                    <state key="normal" title="$5.79">
+                                                        <color key="titleColor" red="0.24705882352941178" green="0.58823529411764708" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ae-2y-0U3">
+                                                    <rect key="frame" x="311.5" y="25" width="5" height="5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="5" id="FnD-Ba-YNP"/>
+                                                        <constraint firstAttribute="height" constant="5" id="Rp8-z7-AXZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="9"/>
+                                                    <color key="textColor" red="0.24705882352941178" green="0.58823529411764708" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCw-eK-9fZ" customClass="CosmosView" customModule="IDEA_AppsList" customModuleProvider="target">
+                                                    <rect key="frame" x="99" y="44.5" width="76" height="10.5"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="(357)"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textSize">
+                                                            <real key="value" value="9"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textMargin">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qCw-eK-9fZ" firstAttribute="leading" secondItem="7tY-xJ-dyp" secondAttribute="leading" id="07R-VM-3vT"/>
+                                                <constraint firstItem="5ae-2y-0U3" firstAttribute="leading" secondItem="HRk-Z3-G5b" secondAttribute="leading" constant="1.5" id="4Ln-50-k38"/>
+                                                <constraint firstItem="EbG-lo-XbW" firstAttribute="centerY" secondItem="vOp-oa-jng" secondAttribute="centerY" constant="-15" id="DS6-Ik-fjF"/>
+                                                <constraint firstItem="hQh-mG-XFs" firstAttribute="width" secondItem="HRk-Z3-G5b" secondAttribute="width" id="MAc-Ze-Oyn"/>
+                                                <constraint firstItem="vOp-oa-jng" firstAttribute="top" secondItem="Rh7-y1-Hxl" secondAttribute="top" constant="7.5" id="PQF-B1-oQl"/>
+                                                <constraint firstItem="7tY-xJ-dyp" firstAttribute="leading" secondItem="EbG-lo-XbW" secondAttribute="leading" id="S98-OW-KIV"/>
+                                                <constraint firstAttribute="trailing" secondItem="HRk-Z3-G5b" secondAttribute="trailing" constant="15" id="VTt-Vc-qcr"/>
+                                                <constraint firstItem="hQh-mG-XFs" firstAttribute="top" secondItem="HRk-Z3-G5b" secondAttribute="bottom" constant="2" id="Vni-ze-zjF"/>
+                                                <constraint firstItem="5ae-2y-0U3" firstAttribute="top" secondItem="HRk-Z3-G5b" secondAttribute="top" constant="1.5" id="YEZ-5x-Ohz"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qCw-eK-9fZ" secondAttribute="trailing" constant="196" id="b3d-a2-zcA"/>
+                                                <constraint firstItem="EbG-lo-XbW" firstAttribute="leading" secondItem="vOp-oa-jng" secondAttribute="trailing" constant="8" id="beg-0O-EVz"/>
+                                                <constraint firstItem="HVq-7N-rYn" firstAttribute="centerY" secondItem="vOp-oa-jng" secondAttribute="centerY" id="cRR-0b-ftT"/>
+                                                <constraint firstItem="7tY-xJ-dyp" firstAttribute="centerY" secondItem="vOp-oa-jng" secondAttribute="centerY" id="d3c-d9-fMb"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EbG-lo-XbW" secondAttribute="trailing" constant="20" symbolic="YES" id="eBu-3g-Pv8"/>
+                                                <constraint firstItem="vOp-oa-jng" firstAttribute="leading" secondItem="HVq-7N-rYn" secondAttribute="trailing" constant="12" id="fvN-V4-KUu"/>
+                                                <constraint firstItem="HVq-7N-rYn" firstAttribute="leading" secondItem="Rh7-y1-Hxl" secondAttribute="leading" constant="15" id="gfz-Bn-CeF"/>
+                                                <constraint firstAttribute="bottom" secondItem="vOp-oa-jng" secondAttribute="bottom" constant="7.5" id="m0Q-TC-lxk"/>
+                                                <constraint firstItem="qCw-eK-9fZ" firstAttribute="centerY" secondItem="vOp-oa-jng" secondAttribute="centerY" constant="15" id="sdw-AL-P2v"/>
+                                                <constraint firstItem="hQh-mG-XFs" firstAttribute="centerX" secondItem="HRk-Z3-G5b" secondAttribute="centerX" id="tf6-3W-YdM"/>
+                                                <constraint firstItem="HRk-Z3-G5b" firstAttribute="centerY" secondItem="vOp-oa-jng" secondAttribute="centerY" id="vGt-fo-aLV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="appCategoryLabel" destination="7tY-xJ-dyp" id="Zcc-Ll-HtS"/>
+                                            <outlet property="appImage" destination="vOp-oa-jng" id="Sxm-Vo-5r5"/>
+                                            <outlet property="appNameLabel" destination="EbG-lo-XbW" id="aQa-9a-YZd"/>
+                                            <outlet property="appNumberLabel" destination="HVq-7N-rYn" id="e3t-a8-y3l"/>
+                                            <outlet property="appPurchasesLabel" destination="hQh-mG-XFs" id="Dmd-WQ-g30"/>
+                                            <outlet property="buyButton" destination="HRk-Z3-G5b" id="Upc-dJ-pJC"/>
+                                            <outlet property="starCosmos" destination="qCw-eK-9fZ" id="rb5-Zd-We4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WDE-2A-69C" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ait-cj-qsh"/>
+                            <constraint firstItem="WDE-2A-69C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hsM-ns-YdC"/>
+                            <constraint firstItem="WDE-2A-69C" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nlF-hR-uib"/>
+                            <constraint firstItem="WDE-2A-69C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wS0-cJ-CrZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Apps" id="0qK-bE-42h"/>
+                    <connections>
+                        <outlet property="appsTableView" destination="WDE-2A-69C" id="oOH-Fa-zXw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JDP-uS-IMo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="juq-G3-ewK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jlE-Tu-SJG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5dN-FY-S2q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oru-5g-f5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iTunesArtwork" width="512" height="512"/>
+    </resources>
+</document>
