@@ -18,8 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IUK-Yn-pdQ">
+                                <rect key="frame" x="169" y="359" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.6705882353" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="eQI-NS-bGa">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qAq-Rz-aTi">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="moviecell" rowHeight="83" id="R6F-AW-hqU" customClass="MovieCell" customModule="IDEA_MoviesList" customModuleProvider="target">
@@ -49,17 +57,16 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IUK-Yn-pdQ">
-                                <rect key="frame" x="169" y="359" width="37" height="37"/>
-                                <color key="color" red="0.0" green="0.6705882353" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qAq-Rz-aTi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4cD-so-rbf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qAq-Rz-aTi" secondAttribute="bottom" id="9Re-aK-rN6"/>
+                            <constraint firstItem="eQI-NS-bGa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PuH-M1-UKa"/>
                             <constraint firstItem="qAq-Rz-aTi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yff-HK-m9a"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="IUK-Yn-pdQ" secondAttribute="bottom" constant="-332" id="idf-z6-Gpl"/>
+                            <constraint firstItem="eQI-NS-bGa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k0h-Ld-bgy"/>
+                            <constraint firstItem="qAq-Rz-aTi" firstAttribute="top" secondItem="eQI-NS-bGa" secondAttribute="bottom" id="oVF-lT-xjs"/>
+                            <constraint firstItem="eQI-NS-bGa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vao-N6-EcF"/>
                             <constraint firstItem="IUK-Yn-pdQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-206" id="wbK-Ci-SGA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qAq-Rz-aTi" secondAttribute="trailing" id="yf4-U8-WGf"/>
                         </constraints>

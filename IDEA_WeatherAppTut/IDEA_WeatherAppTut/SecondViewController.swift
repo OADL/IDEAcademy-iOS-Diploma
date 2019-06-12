@@ -10,7 +10,7 @@ import UIKit
 
 @objc protocol SecondViewDelegate {
     func cityData(city: String)
-    @objc func dosmth()
+    @objc optional func dosmth()
 }
 
 class SecondViewController: UIViewController {

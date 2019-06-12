@@ -23,6 +23,7 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
         // Do any additional setup after loading the view.
         myTableView.delegate = self
         myTableView.dataSource = self
+        myTableView.keyboardDismissMode = .interactive
         loadData()
     }
     
