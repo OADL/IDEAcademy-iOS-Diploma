@@ -10,11 +10,11 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
+
+
 class ViewController: UIViewController {
 
-    enum segmentSelect: Int {
-        case login , register
-    }
+    
     
     var currentPage : segmentSelect = .login
     
@@ -26,11 +26,36 @@ class ViewController: UIViewController {
         }
     }
     @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet weak var mySegment: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let swipeleft = UISwipeGestureRecognizer(target: self, action: #selector(didDetectSwipe))
+        swipeleft.direction = .left
+        self.view.addGestureRecognizer(swipeleft)
+        
+        let swiperight = UISwipeGestureRecognizer(target: self, action: #selector(didDetectSwipe))
+        swiperight.direction = .right
+        self.view.addGestureRecognizer(swiperight)
     }
+    
+    @objc func didDetectSwipe(_ sender: UISwipeGestureRecognizer){
+        switch sender.direction {
+        case .right:
+            mySegment.selectedSegmentIndex = 0
+            mySegment.sendActions(for: .valueChanged)
+            print("right")
+        case .left:
+            mySegment.selectedSegmentIndex = 1
+            mySegment.sendActions(for: .valueChanged)
+            print("left")
+        default:
+            print("no")
+        }
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
