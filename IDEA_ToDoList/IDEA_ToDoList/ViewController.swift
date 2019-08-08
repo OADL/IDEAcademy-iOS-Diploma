@@ -126,9 +126,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
-            
             self.data.remove(at: indexPath.row)
-            self.listTableView.reloadData()
+            self.listTableView.deleteRows(at: [indexPath], with: .automatic)
             self.saveData()
             self.noOfItemsLabel.text = "\(self.data.count) Things to do"
         }
