@@ -52,6 +52,7 @@ class ToDoViewController: UIViewController , UITextViewDelegate {
         super.viewWillDisappear(animated)
         
         NotificationCenter.default.removeObserver(self)
+        sendBackDetails?()
     }
     
     @objc func keyboardOpen(notification: Notification){
@@ -66,11 +67,6 @@ class ToDoViewController: UIViewController , UITextViewDelegate {
     @objc func keyboardClose(notification: Notification){
         UIView.animate(withDuration: 0.5) {
             self.bottomConstraint.constant = 10
-        }
-        
-        guard let textF = todoDetails.text else { return }
-        if textF != "" {
-            sendBackDetails?()
         }
     }
 
